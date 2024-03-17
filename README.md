@@ -1,0 +1,1 @@
+# Guia-de-Boas-Pr-ticas-e-Padroniza-o-do-Projeto
