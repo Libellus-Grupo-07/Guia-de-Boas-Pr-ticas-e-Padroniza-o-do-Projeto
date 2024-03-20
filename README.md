@@ -42,6 +42,32 @@ Esteja atento às práticas de segurança recomendadas ao lidar com dados sensí
 Evite vulnerabilidades conhecidas e mantenha todas as dependências atualizadas com as versões mais recentes.
 Realize revisões regulares de segurança e corrija quaisquer problemas identificados.
 
+8. Utilização de branch
+
+Para utilizar o git hub seguindo alguns conceitos que adquiri com o pessoal da Sptech, escrevi a sequência de comandos (para quem usa o terminal do git) para utilizar o git hub, em dois casos:
+1)para quem não tem a Branch criada:
+Cria o repositório/branch -> git init
+Altera o nome da Branch -> git branch -m <nome Branch atual> <novo nome da Branch>
+Realiza a conexão da Branch com o repositório -> git remote add <nome da Branch> <link do repositório>
+Confira se está na Branch certa -> git status
+Gera o pacote de alterações/arquivos -> git add .
+OBS: É possível utilzar mais de 1 'git add .', smepre será adicionado ao pacote
+para fechar o pacote -> git commit -m '<comentário>'
+OBS: O '-m' serve para registrar a mensagem de commit. Exe: Git commit -m 'Ajuste na classe De Teste'
+para enviar o pacote ao git -> git push --set-upstream <nome da Branch> <nome da branch>
+OBS: Esse comando é para definir a Branch para receber push, execute somente na primeira vez, nas próximas vezes, utilize o 'git push'//
+//--set-upstream : É usada para configurar a branch remota como upstream da branch local.
+2) Para quem já tem a Branch criada:
+Clona a pasta do repositório -> git clone <link do repositório>
+Entra na pasta clonada -> cd <nome da pasta>
+Acessa a Branch -> git checkout <nome da Branch>
+Confira se está na Branch certa -> git status
+git add .
+OBS: É possível utilzar mais de 1 'git add .', smepre será adicionado ao pacote
+para fechar o pacote -> git commit -m '<Comentario>'
+OBS: O '-m' serve para registrar a mensagem de commit. Exe: Git commit -m 'Ajuste na classe De Teste'
+para enviar o pacote ao git -> git push
+
 8. Commitar qualquer alteração
 
 Não importa qual foi a alteração, é importante que dê commit no que foi feito (mesmo que uma implementação simples e pequena). Isso se deve ao fato de que todo dia todos deverão dar um git pull, então é necessário subir todas as alterações para que não haja conflitos.
