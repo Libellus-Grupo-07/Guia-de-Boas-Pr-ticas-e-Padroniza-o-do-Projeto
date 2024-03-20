@@ -68,6 +68,6 @@ para fechar o pacote -> git commit -m '<Comentario>'
 OBS: O '-m' serve para registrar a mensagem de commit. Exe: Git commit -m 'Ajuste na classe De Teste'
 para enviar o pacote ao git -> git push
 
-8. Commitar qualquer alteração
+9. Commitar qualquer alteração
 
 Não importa qual foi a alteração, é importante que dê commit no que foi feito (mesmo que uma implementação simples e pequena). Isso se deve ao fato de que todo dia todos deverão dar um git pull, então é necessário subir todas as alterações para que não haja conflitos.
